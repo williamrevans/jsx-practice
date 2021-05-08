@@ -15,31 +15,34 @@ const currentDate = new Date();
 const currentHour = currentDate.getHours();
 console.log(currentHour);
 
-// const customStyle = {
-//   color: "red"
-// };
-
-// const customStyle = {
-//   color: "red"
-// };
-
-// const customStyle = {
-//   color: "red"
-// };
+var customStyle = {
+  color: "red"
+};
 
 if (currentHour < 12 && currentHour > 0) {
   greeting = "Good morning";
+  customStyle = {
+    color: "red"
+  };
 } else if (currentHour < 18) {
   greeting = "Good afternoon";
+  customStyle = {
+    color: "green"
+  };
 } else if (currentHour < 24) {
   greeting = "Good evening";
+  customStyle = {
+    color: "blue"
+  };
 } else {
   console.log("error");
 }
 
 ReactDOM.render(
   <div>
-    <h1 className="heading">{greeting}</h1>
+    <h1 className="heading" style={customStyle}>
+      {greeting}
+    </h1>
   </div>,
   document.getElementById("root")
 );
