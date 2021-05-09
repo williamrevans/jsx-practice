@@ -21,19 +21,13 @@ var customStyle = {
 
 if (currentHour < 12 && currentHour > 0) {
   greeting = "Good morning";
-  customStyle = {
-    color: "red"
-  };
+  customStyle.color = "red";
 } else if (currentHour < 18) {
   greeting = "Good afternoon";
-  customStyle = {
-    color: "green"
-  };
+  customStyle.color = "green";
 } else if (currentHour < 24) {
   greeting = "Good evening";
-  customStyle = {
-    color: "blue"
-  };
+  customStyle.color = "blue";
 } else {
   console.log("error");
 }
