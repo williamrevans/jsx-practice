@@ -13,7 +13,7 @@ import ReactDOM from "react-dom";
 var greeting = "Test Greeting";
 const currentDate = new Date();
 const currentHour = currentDate.getHours();
-console.log(currentHour);
+// console.log(currentHour);
 
 var customStyle = {
   color: "red"
